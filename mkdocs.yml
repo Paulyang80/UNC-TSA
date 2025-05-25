@@ -1,0 +1,76 @@
+site_name: UNC TSA 文檔
+site_description: 北卡羅來納大學台灣學生會文檔中心
+site_author: UNC TSA
+site_url: https://unc-tsa.github.io/unc-tsa-docs
+
+# 主題設置
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切換到深色模式
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切換到淺色模式
+
+# 插件設置
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: datetime
+      locale: zh
+  - minify:
+      minify_html: true
+
+# 導航設置
+nav:
+  - 首頁: index.md
+  - 關於 TSA: about.md
+  - 活動一覽: events.md
+  - 資源:
+    - 活動準則: resources/guidelines.md
+    - 推薦工具: resources/tools.md
+  - 聯絡方式: contact.md
+
+# 額外設置
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+# 額外配置
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/unc-tsa
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/unc_tsa
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/unc.tsa
+
+# 版權信息
+copyright: Copyright &copy; 2024 UNC TSA 

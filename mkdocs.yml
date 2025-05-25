@@ -32,9 +32,6 @@ theme:
 # 插件設置
 plugins:
   - search
-  - git-revision-date-localized:
-      type: datetime
-      locale: zh
   - minify:
       minify_html: true
 
@@ -55,8 +52,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tabbed
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - footnotes
   - toc:
